@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freaky Fashion</title>
+    <link href="../dist/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+  </head>
+  <body class="bg-gray-100 flex-col space-y-4 max-w-screen-2xl mx-auto p-4">
+    <!--Header-->
+    <header class="flex flex-col gap-4 md:flex-row">
+
+      <img src="https://placehold.co/640x200" alt="" />
+
+      <div class="action-bar flex space-x-3 items-center justify-center w-full">
+        <form class="w-full max-w-8">
+          <div
+            class="input-container flex items-center bg-white text-gray-900 rounded-lg px-2"
+          >
+            <i class="bi bi-search"></i>
+            <input
+              class="product-search flex-grow border-none p-2 focus:outline-none focus:border-none"
+              name="product-search"
+              type="text"
+              placeholder="Sök produkt"
+            />
+          </div>
+        </form>
+        <a href="#"><i class="bi bi-heart-fill iconBtn"></i></a>
+        <a href="#"><i class="bi bi-basket-fill iconBtn"></i></a>
+      </div>
+    </header>
+
+    <!--Navigation links-->
+    <nav
+      class="flex flex-col gap-4 uppercase text-s tracking-wider text-gray-600 font-extrabold md:flex-row"
+    >
+      <a href="#" title="">Nyheter</a>
+      <a href="#" title="">Topplistan</a>
+      <a href="#" title="">Rea</a>
+      <a href="#" title="">Kampanjer</a>
+    </nav>
+
+    <main class="space-y-6">
+      <!--Hero-->
+      <section
+        class="hero bg-white p-4 space-y-8 rounded-md lg:flex lg:items-center lg:flex-row-reverse lg:gap-8"
+      >
+        <img
+          src="https://placehold.co/640x400"
+          alt=""
+          class="w-full rounded lg:w-1/2"
+        />
+        <div class="lg:w-1/2 space-y-2">
+          <h1
+            class="font-bold uppercase text-xl text-gray-600 text-center lg:text-left"
+          >
+            Lorem ipsum dolor
+          </h1>
+          <p class="text-center lg:text-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+            animi aut. Aut modi voluptates laudantium.
+          </p>
+        </div>
+      </section>
+
+      <!--Spots (hidden on smaller screens)-->
+      <section class="spot hidden lg:flex space-x-6">
+        <a href="#">
+          <article class="relative spot">
+            <img
+              src="https://placehold.co/640x400"
+              alt=""
+              class="w-full rounded"
+            />
+            <div
+              class="absolute inset-0 bg-white opacity-40 flex items-center justify-center"
+            ></div>
+            <div
+              class="absolute inset-0 flex items-center justify-center text-center font-bold m-4 leading-4"
+            >
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit
+              </span>
+            </div>
+          </article>
+        </a>
+
+        <a href="#">
+          <article class="relative spot">
+            <img
+              src="https://placehold.co/640x400"
+              alt=""
+              class="w-full rounded"
+            />
+            <div
+              class="absolute inset-0 bg-white opacity-40 flex items-center justify-center"
+            ></div>
+            <div
+              class="absolute inset-0 flex items-center justify-center text-center font-bold m-4 leading-4"
+            >
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit
+              </span>
+            </div>
+          </article>
+        </a>
+
+        <a href="#">
+          <article class="relative spot">
+            <img
+              src="https://placehold.co/640x400"
+              alt=""
+              class="w-full rounded"
+            />
+            <div
+              class="absolute inset-0 bg-white opacity-40 flex items-center justify-center"
+            ></div>
+            <div
+              class="absolute inset-0 flex items-center justify-center text-center font-bold m-4 leading-4"
+            >
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit
+              </span>
+            </div>
+          </article>
+        </a>
+      </section>
+
+      <!--Product list-->
+      <ul class="product-list space-y-6 flex flex-col sm:flex-row sm:flex-wrap">
+        <a href="product-details.html">
+          <li class="product-card w-full sm:w-1/2 lg:w-1/4 p-2">
+            <div class="product-img">
+              <img
+                class="shadow-md rounded"
+                src="https://placehold.co/640x800"
+                alt=""
+              />
+              <span class="product-badge">Nyhet</span>
+              <a href="#" class="like-product"
+                ><i class="bi bi-heart-fill"></i
+              ></a>
+            </div>
+            <div class="product-header">
+              <h2>Svart T-Shirt</h2>
+              <p>199 SEK</p>
+            </div>
+            <p class="brand">Levis</p>
+          </li>
+        </a>
+
+        <a href="product-details.html">
+          <li class="product-card w-full sm:w-1/2 lg:w-1/4 p-2">
+            <div class="product-img">
+              <img
+                class="shadow-md rounded"
+                src="https://placehold.co/640x800"
+                alt=""
+              />
+              <a href="#" class="like-product"><i class="bi bi-heart"></i></a>
+            </div>
+            <div class="product-header">
+              <h2>Svart T-Shirt</h2>
+              <p>199 SEK</p>
+            </div>
+            <p class="brand">Levis</p>
+          </li>
+        </a>
+
+        <a href="product-details.html">
+          <li class="product-card w-full sm:w-1/2 lg:w-1/4 p-2">
+            <div class="product-img">
+              <img
+                class="shadow-md rounded"
+                src="https://placehold.co/640x800"
+                alt=""
+              />
+              <a href="#" class="like-product"><i class="bi bi-heart"></i></a>
+            </div>
+            <div class="product-header">
+              <h2>Svart T-Shirt</h2>
+              <p>199 SEK</p>
+            </div>
+            <p class="brand">Levis</p>
+          </li>
+        </a>
+
+        <a href="product-details.html">
+          <li class="product-card w-full sm:w-1/2 lg:w-1/4 p-2">
+            <div class="product-img">
+              <img
+                class="shadow-md rounded"
+                src="https://placehold.co/640x800"
+                alt=""
+              />
+              <a href="#" class="like-product"><i class="bi bi-heart"></i></a>
+            </div>
+            <div class="product-header">
+              <h2>Svart T-Shirt</h2>
+              <p>199 SEK</p>
+            </div>
+            <p class="brand">Levis</p>
+          </li>
+        </a>
+
+        <a href="product-details.html">
+          <li class="product-card w-full sm:w-1/2 lg:w-1/4 p-2">
+            <div class="product-img">
+              <img
+                class="shadow-md rounded"
+                src="https://placehold.co/640x800"
+                alt=""
+              />
+              <a href="#" class="like-product"><i class="bi bi-heart"></i></a>
+            </div>
+            <div class="product-header">
+              <h2>Svart T-Shirt</h2>
+              <p>199 SEK</p>
+            </div>
+            <p class="brand">Levis</p>
+          </li>
+        </a>
+
+        <a href="product-details.html">
+          <li class="product-card w-full sm:w-1/2 lg:w-1/4 p-2">
+            <div class="product-img">
+              <img
+                class="shadow-md rounded"
+                src="https://placehold.co/640x800"
+                alt=""
+              />
+              <a href="#" class="like-product"><i class="bi bi-heart"></i></a>
+            </div>
+            <div class="product-header">
+              <h2>Svart T-Shirt</h2>
+              <p>199 SEK</p>
+            </div>
+            <p class="brand">Levis</p>
+          </li>
+        </a>
+
+        <a href="product-details.html">
+          <li class="product-card w-full sm:w-1/2 lg:w-1/4 p-2">
+            <div class="product-img">
+              <img
+                class="shadow-md rounded"
+                src="https://placehold.co/640x800"
+                alt=""
+              />
+              <a href="#" class="like-product"><i class="bi bi-heart"></i></a>
+            </div>
+            <div class="product-header">
+              <h2>Svart T-Shirt</h2>
+              <p>199 SEK</p>
+            </div>
+            <p class="brand">Levis</p>
+          </li>
+        </a>
+
+        <a href="product-details.html">
+          <li class="product-card w-full sm:w-1/2 lg:w-1/4 p-2">
+            <div class="product-img">
+              <img
+                class="shadow-md rounded"
+                src="https://placehold.co/640x800"
+                alt=""
+              />
+              <a href="#" class="like-product"><i class="bi bi-heart"></i></a>
+            </div>
+            <div class="product-header">
+              <h2>Svart T-Shirt</h2>
+              <p>199 SEK</p>
+            </div>
+            <p class="brand">Levis</p>
+          </li>
+        </a>
+      </ul>
+    </main>
+  </body>
+</html>
