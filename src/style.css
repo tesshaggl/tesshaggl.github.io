@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.iconBtn {
+  font-size: 1.25rem;
+}
+
+.spot {
+  position: relative;
+  .spot-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 120%;
+  }
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
+
+  .product-img {
+    position: relative;
+    margin-bottom: 0.25rem;
+
+    .product-badge {
+      position: absolute;
+      top: 0.5rem;
+      left: 0.5rem;
+      background-color: black;
+      color: white;
+      font-size: 0.75rem;
+      padding: 0.15rem 0.5rem;
+      border-radius: 1rem;
+    }
+    .like-product {
+      position: absolute;
+      bottom: 0.5rem;
+      right: 0.5rem;
+    }
+  }
+  .product-header {
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .brand {
+    font-size: 0.75rem;
+  }
+}
