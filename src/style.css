@@ -49,3 +49,15 @@
     font-size: 0.75rem;
   }
 }
+
+footer  {
+  .accordion-heading {
+    font-weight: 600;
+  }
+  .accordion-content {
+    margin-top: 1rem;
+    .block {
+      margin-top: 0.5rem;
+    }
+  }
+}

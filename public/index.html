@@ -11,13 +11,18 @@
     />
   </head>
   <body class="bg-gray-100 flex-col space-y-4 max-w-screen-2xl mx-auto p-4">
-    <!--Header-->
-    <header class="flex flex-col gap-4 md:flex-row">
+    <!-- Header -->
+    <header class="flex flex-col gap-4 sm:flex-row sm:items-center">
+      <!-- Logotype -->
+      <img
+        src="https://placehold.co/640x200"
+        alt=""
+        class="w-full sm:w-1/2 object-cover"
+      />
 
-      <img src="https://placehold.co/640x200" alt="" />
-
-      <div class="action-bar flex space-x-3 items-center justify-center w-full">
-        <form class="w-full max-w-8">
+      <!-- Action bar -->
+      <div class="action-bar flex flex-row items-center sm:w-1/2 space-x-3">
+        <form class="w-full">
           <div
             class="input-container flex items-center bg-white text-gray-900 rounded-lg px-2"
           >
@@ -30,23 +35,27 @@
             />
           </div>
         </form>
-        <a href="#"><i class="bi bi-heart-fill iconBtn"></i></a>
-        <a href="#"><i class="bi bi-basket-fill iconBtn"></i></a>
+        <div class="icon-container flex flex-row gap-2">
+          <a href="#"><i class="bi bi-heart-fill iconBtn"></i></a>
+          <a href="#"><i class="bi bi-basket-fill iconBtn"></i></a>
+        </div>
       </div>
     </header>
 
-    <!--Navigation links-->
+    <!-- Navigation links -->
     <nav
-      class="flex flex-col gap-4 uppercase text-s tracking-wider text-gray-600 font-extrabold md:flex-row"
+      class="flex flex-col gap-4 uppercase text-xs tracking-wider text-gray-600 font-extrabold sm:flex-row sm:text-sm"
     >
       <a href="#" title="">Nyheter</a>
+      <a href="#" title="" class="hidden lg:flex">Kategorier</a>
+      <!-- Link hidden on smaller screens -->
       <a href="#" title="">Topplistan</a>
       <a href="#" title="">Rea</a>
       <a href="#" title="">Kampanjer</a>
     </nav>
 
     <main class="space-y-6">
-      <!--Hero-->
+      <!-- Hero -->
       <section
         class="hero bg-white p-4 space-y-8 rounded-md lg:flex lg:items-center lg:flex-row-reverse lg:gap-8"
       >
@@ -68,7 +77,7 @@
         </div>
       </section>
 
-      <!--Spots (hidden on smaller screens)-->
+      <!-- Spots (hidden on smaller screens) -->
       <section class="spot hidden lg:flex space-x-6">
         <a href="#">
           <article class="relative spot">
@@ -131,10 +140,10 @@
         </a>
       </section>
 
-      <!--Product list-->
-      <ul class="product-list space-y-6 flex flex-col sm:flex-row sm:flex-wrap">
-        <a href="product-details.html">
-          <li class="product-card w-full sm:w-1/2 lg:w-1/4 p-2">
+      <!-- Product list -->
+      <ul class="product-list flex flex-col sm:flex-row sm:flex-wrap">
+        <li class="product-card w-full sm:w-1/2 lg:w-1/4 p-2">
+          <a href="product-details.html">
             <div class="product-img">
               <img
                 class="shadow-md rounded"
@@ -150,12 +159,12 @@
               <h2>Svart T-Shirt</h2>
               <p>199 SEK</p>
             </div>
-            <p class="brand">Levis</p>
-          </li>
-        </a>
+            <p class="brand">Levis</p></a
+          >
+        </li>
 
-        <a href="product-details.html">
-          <li class="product-card w-full sm:w-1/2 lg:w-1/4 p-2">
+        <li class="product-card w-full sm:w-1/2 lg:w-1/4 p-2">
+          <a href="product-details.html">
             <div class="product-img">
               <img
                 class="shadow-md rounded"
@@ -168,12 +177,12 @@
               <h2>Svart T-Shirt</h2>
               <p>199 SEK</p>
             </div>
-            <p class="brand">Levis</p>
-          </li>
-        </a>
+            <p class="brand">Levis</p></a
+          >
+        </li>
 
-        <a href="product-details.html">
-          <li class="product-card w-full sm:w-1/2 lg:w-1/4 p-2">
+        <li class="product-card w-full sm:w-1/2 lg:w-1/4 p-2">
+          <a href="product-details.html">
             <div class="product-img">
               <img
                 class="shadow-md rounded"
@@ -186,12 +195,12 @@
               <h2>Svart T-Shirt</h2>
               <p>199 SEK</p>
             </div>
-            <p class="brand">Levis</p>
-          </li>
-        </a>
+            <p class="brand">Levis</p></a
+          >
+        </li>
 
-        <a href="product-details.html">
-          <li class="product-card w-full sm:w-1/2 lg:w-1/4 p-2">
+        <li class="product-card w-full sm:w-1/2 lg:w-1/4 p-2">
+          <a href="product-details.html">
             <div class="product-img">
               <img
                 class="shadow-md rounded"
@@ -204,12 +213,12 @@
               <h2>Svart T-Shirt</h2>
               <p>199 SEK</p>
             </div>
-            <p class="brand">Levis</p>
-          </li>
-        </a>
+            <p class="brand">Levis</p></a
+          >
+        </li>
 
-        <a href="product-details.html">
-          <li class="product-card w-full sm:w-1/2 lg:w-1/4 p-2">
+        <li class="product-card w-full sm:w-1/2 lg:w-1/4 p-2">
+          <a href="product-details.html">
             <div class="product-img">
               <img
                 class="shadow-md rounded"
@@ -222,12 +231,12 @@
               <h2>Svart T-Shirt</h2>
               <p>199 SEK</p>
             </div>
-            <p class="brand">Levis</p>
-          </li>
-        </a>
+            <p class="brand">Levis</p></a
+          >
+        </li>
 
-        <a href="product-details.html">
-          <li class="product-card w-full sm:w-1/2 lg:w-1/4 p-2">
+        <li class="product-card w-full sm:w-1/2 lg:w-1/4 p-2">
+          <a href="product-details.html">
             <div class="product-img">
               <img
                 class="shadow-md rounded"
@@ -240,12 +249,12 @@
               <h2>Svart T-Shirt</h2>
               <p>199 SEK</p>
             </div>
-            <p class="brand">Levis</p>
-          </li>
-        </a>
+            <p class="brand">Levis</p></a
+          >
+        </li>
 
-        <a href="product-details.html">
-          <li class="product-card w-full sm:w-1/2 lg:w-1/4 p-2">
+        <li class="product-card w-full sm:w-1/2 lg:w-1/4 p-2">
+          <a href="product-details.html">
             <div class="product-img">
               <img
                 class="shadow-md rounded"
@@ -258,12 +267,12 @@
               <h2>Svart T-Shirt</h2>
               <p>199 SEK</p>
             </div>
-            <p class="brand">Levis</p>
-          </li>
-        </a>
+            <p class="brand">Levis</p></a
+          >
+        </li>
 
-        <a href="product-details.html">
-          <li class="product-card w-full sm:w-1/2 lg:w-1/4 p-2">
+        <li class="product-card w-full sm:w-1/2 lg:w-1/4 p-2">
+          <a href="product-details.html">
             <div class="product-img">
               <img
                 class="shadow-md rounded"
@@ -276,10 +285,98 @@
               <h2>Svart T-Shirt</h2>
               <p>199 SEK</p>
             </div>
-            <p class="brand">Levis</p>
-          </li>
-        </a>
+            <p class="brand">Levis</p></a
+          >
+        </li>
       </ul>
     </main>
+
+    <!-- Footer -->
+    <footer>
+      <ul class="text-md space-y-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:space-y-0">
+        <li class="flex items-center">
+          <i class="bi bi-globe-europe-africa text-4xl mr-2"></i>
+          Gratis frakt och returer
+        </li>
+        <li class="flex items-center">
+          <i class="bi bi-airplane-engines-fill text-4xl mr-2"></i>
+          Expressfrakt
+        </li>
+        <li class="flex items-center">
+          <i class="bi bi-shield-shaded text-4xl mr-2"></i>
+          Säkra betalningar
+        </li>
+        <li class="flex items-center">
+          <i class="bi bi-emoji-smile text-4xl mr-2"></i>
+          Nyheter varje dag
+        </li>
+      </ul>
+      
+
+      <ul class="accordion-list my-8 space-y-2">
+        <li class="accordion bg-slate-200 p-3 rounded-md hover:bg-slate-300">
+          <button
+            class="w-full flex justify-between items-center rounded focus:outline-none accordion-button"
+          >
+            <span class="accordion-heading">Shopping</span>
+            <i class="bi bi-chevron-down"></i>
+          </button>
+          <!-- Accordion content -->
+          <div class="accordion-content hidden">
+            <a href="#" class="block hover:font-semibold">Vinterjackor</a>
+            <a href="#" class="block hover:font-semibold">Pufferjackor</a>
+            <a href="#" class="block hover:font-semibold">Kappa</a>
+            <a href="#" class="block hover:font-semibold">Trenchcoats</a>
+          </div>
+        </li>
+        <li class="accordion bg-slate-200 p-3 rounded-md hover:bg-slate-300">
+          <button
+            class="w-full flex justify-between items-center rounded focus:outline-none accordion-button"
+          >
+            <span class="accordion-heading">Mina sidor</span>
+            <i class="bi bi-chevron-down"></i>
+          </button>
+          <!-- Accordion content -->
+          <div class="accordion-content hidden">
+            <a href="#" class="block hover:font-semibold">Mina ordrar</a>
+            <a href="#" class="block hover:font-semibold">Mitt konto</a>
+          </div>
+        </li>
+        <li class="accordion bg-slate-200 p-3 rounded-md hover:bg-slate-300">
+          <button
+            class="w-full flex justify-between items-center rounded focus:outline-none accordion-button"
+          >
+            <span class="accordion-heading">Kundtjänst</span>
+            <i class="bi bi-chevron-down"></i>
+          </button>
+          <!-- Accordion content -->
+          <div class="accordion-content hidden">
+            <a href="#" class="block hover:font-semibold">Returnpolicy</a>
+            <a href="#" class="block hover:font-semibold">Integritetspolicy</a>
+          </div>
+        </li>
+      </ul>
+      <div class="text-center"><p>© Freaky Fashion</p></div>
+      <script>
+        // Get all accordion buttons
+        const accordionButtons = document.querySelectorAll(".accordion-button");
+
+        // Loop through each button and add a click event listener
+        accordionButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            // Find the corresponding accordion-content (the closest sibling)
+            const accordionContent = this.nextElementSibling;
+
+            // Toggle to show/hide the content
+            accordionContent.classList.toggle("hidden");
+
+            // Change icon from down to up or vice versa
+            const icon = this.querySelector("i");
+            icon.classList.toggle("bi-chevron-down");
+            icon.classList.toggle("bi-chevron-up");
+          });
+        });
+      </script>
+    </footer>
   </body>
 </html>
