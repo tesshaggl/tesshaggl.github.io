@@ -51,10 +51,10 @@
 }
 
 footer  {
-  .accordion-heading {
+  .link-list-heading {
     font-weight: 600;
   }
-  .accordion-content {
+  .link-list-items {
     margin-top: 1rem;
     .block {
       margin-top: 0.5rem;

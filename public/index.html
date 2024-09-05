@@ -10,7 +10,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
     />
   </head>
-  <body class="bg-gray-100 flex-col space-y-4 max-w-screen-2xl mx-auto p-4">
+  <body class="bg-gray-100 flex-col space-y-4 max-w-screen-2xl m-4">
     <!-- Header -->
     <header class="flex flex-col gap-4 sm:flex-row sm:items-center">
       <!-- Logotype -->
@@ -293,70 +293,91 @@
 
     <!-- Footer -->
     <footer>
-      <ul class="text-md space-y-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:space-y-0">
-        <li class="flex items-center">
+      <!--Shopping information-->
+      <ul
+        class="text-md space-y-2 px-2 flex flex-col sm:flex-row sm:flex-wrap lg:flex-nowrap"
+      >
+        <li class="flex items-center w-full sm:w-1/2 lg:w-1/4">
           <i class="bi bi-globe-europe-africa text-4xl mr-2"></i>
           Gratis frakt och returer
         </li>
-        <li class="flex items-center">
+        <li class="flex items-center w-full sm:w-1/2 lg:w-1/4">
           <i class="bi bi-airplane-engines-fill text-4xl mr-2"></i>
           Expressfrakt
         </li>
-        <li class="flex items-center">
+        <li class="flex items-center w-full sm:w-1/2 lg:w-1/4">
           <i class="bi bi-shield-shaded text-4xl mr-2"></i>
           Säkra betalningar
         </li>
-        <li class="flex items-center">
+        <li class="flex items-center w-full sm:w-1/2 lg:w-1/4">
           <i class="bi bi-emoji-smile text-4xl mr-2"></i>
           Nyheter varje dag
         </li>
       </ul>
-      
 
-      <ul class="accordion-list my-8 space-y-2">
-        <li class="accordion bg-slate-200 p-3 rounded-md hover:bg-slate-300">
-          <button
-            class="w-full flex justify-between items-center rounded focus:outline-none accordion-button"
+      <!--Footer links-->
+      <div class="sm:bg-slate-400 sm:-mx-4 sm:my-5">
+        <ul class="footer-links my-8 space-y-2 flex flex-col sm:flex-row">
+          <!--Shopping-->
+          <li
+            class="link-list bg-slate-200 p-3 rounded-md hover:bg-slate-300 sm:bg-transparent sm:hover:bg-transparent sm:w-1/3"
           >
-            <span class="accordion-heading">Shopping</span>
-            <i class="bi bi-chevron-down"></i>
-          </button>
-          <!-- Accordion content -->
-          <div class="accordion-content hidden">
-            <a href="#" class="block hover:font-semibold">Vinterjackor</a>
-            <a href="#" class="block hover:font-semibold">Pufferjackor</a>
-            <a href="#" class="block hover:font-semibold">Kappa</a>
-            <a href="#" class="block hover:font-semibold">Trenchcoats</a>
-          </div>
-        </li>
-        <li class="accordion bg-slate-200 p-3 rounded-md hover:bg-slate-300">
-          <button
-            class="w-full flex justify-between items-center rounded focus:outline-none accordion-button"
+            <button
+              class="w-full flex justify-between items-center rounded focus:outline-none accordion-button"
+            >
+              <span class="link-list-heading">Shopping</span>
+              <i class="bi bi-chevron-down sm:hidden"></i>
+            </button>
+            <!-- Accordion content -->
+            <div class="link-list-items hidden sm:block">
+              <a href="#" class="block hover:font-semibold">Vinterjackor</a>
+              <a href="#" class="block hover:font-semibold">Pufferjackor</a>
+              <a href="#" class="block hover:font-semibold">Kappa</a>
+              <a href="#" class="block hover:font-semibold">Trenchcoats</a>
+            </div>
+          </li>
+
+          <!--My pages-->
+          <li
+            class="link-list bg-slate-200 p-3 rounded-md hover:bg-slate-300 sm:bg-transparent sm:hover:bg-transparent sm:w-1/3"
           >
-            <span class="accordion-heading">Mina sidor</span>
-            <i class="bi bi-chevron-down"></i>
-          </button>
-          <!-- Accordion content -->
-          <div class="accordion-content hidden">
-            <a href="#" class="block hover:font-semibold">Mina ordrar</a>
-            <a href="#" class="block hover:font-semibold">Mitt konto</a>
-          </div>
-        </li>
-        <li class="accordion bg-slate-200 p-3 rounded-md hover:bg-slate-300">
-          <button
-            class="w-full flex justify-between items-center rounded focus:outline-none accordion-button"
+            <button
+              class="w-full flex justify-between items-center rounded focus:outline-none accordion-button"
+            >
+              <span class="link-list-heading">Mina sidor</span>
+              <i class="bi bi-chevron-down sm:hidden"></i>
+            </button>
+            <!-- Accordion content -->
+            <div class="link-list-items hidden sm:block">
+              <a href="#" class="block hover:font-semibold">Mina ordrar</a>
+              <a href="#" class="block hover:font-semibold">Mitt konto</a>
+            </div>
+          </li>
+
+          <!--Customer service-->
+          <li
+            class="link-list bg-slate-200 p-3 rounded-md hover:bg-slate-300 sm:bg-transparent sm:hover:bg-transparent sm:w-1/3"
           >
-            <span class="accordion-heading">Kundtjänst</span>
-            <i class="bi bi-chevron-down"></i>
-          </button>
-          <!-- Accordion content -->
-          <div class="accordion-content hidden">
-            <a href="#" class="block hover:font-semibold">Returnpolicy</a>
-            <a href="#" class="block hover:font-semibold">Integritetspolicy</a>
-          </div>
-        </li>
-      </ul>
+            <button
+              class="w-full flex justify-between items-center rounded focus:outline-none accordion-button"
+            >
+              <span class="link-list-heading">Kundtjänst</span>
+              <i class="bi bi-chevron-down sm:hidden"></i>
+            </button>
+
+            <!-- Accordion content -->
+            <div class="link-list-items hidden sm:block">
+              <a href="#" class="block hover:font-semibold">Returnpolicy</a>
+              <a href="#" class="block hover:font-semibold"
+                >Integritetspolicy</a
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
       <div class="text-center"><p>© Freaky Fashion</p></div>
+
+      <!--Accordion script-->
       <script>
         // Get all accordion buttons
         const accordionButtons = document.querySelectorAll(".accordion-button");
